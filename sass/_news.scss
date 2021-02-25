@@ -15,13 +15,14 @@
 .news {
   display: grid;
   gap: 1.75rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
   &__item {
     padding-left: 2.5rem;
     background-color: $green;
 
     img {
+      width: 100%;
     }
 
     .news__heading {

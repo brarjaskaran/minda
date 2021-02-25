@@ -3,14 +3,17 @@
   background-color: $gray;
   height: 944px;
   position: relative;
-
-  &__image {
-    img {
-    }
-  }
+  z-index: 2;
+  padding: 1rem;
 
   @media (max-width: 750px) {
-    display: inline;
+    padding: 0;
+  }
+
+  img {
+    z-index: 2;
+    position: relative;
+    object-fit: contain;
   }
 
   &__content {
@@ -20,6 +23,15 @@
     flex-direction: column;
 
     @media (max-width: 750px) {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      display: block;
+      height: fit-content;
+      width: 70%;
+      z-index: 4;
+      background-color: $green;
+      margin: 0px;
     }
 
     h1 {
@@ -28,37 +40,47 @@
       font-weight: 400;
       color: $text-color;
       font-size: 2rem;
-
       @media (max-width: 750px) {
-        display: none;
+        margin-top: 0;
+        padding: 1rem;
       }
     }
     p {
       font-weight: 350;
       margin: 0 4rem 3rem 4rem;
+
       @media (max-width: 750px) {
         display: none;
       }
     }
+  }
 
-    .btn-container {
-      height: 160px;
-      width: 768px;
-      background-color: $green;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      z-index: 0;
-      top: 784px;
+  .btn-container {
+    height: 160px;
+    width: 768px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    padding: 2rem 4rem;
 
-      i {
-        font-size: 2rem;
-      }
-      .hero__text {
-        font-weight: 600;
-        margin-left: 10px;
-      }
+    @media (max-width: 750px) {
+      display: none;
+    }
+
+    i {
+      font-size: 2rem;
+      font-weight: 100;
+      margin-right: 10px;
+    }
+
+    .hero__text {
+      font-weight: 600;
+      margin-left: 10px;
     }
   }
 }
