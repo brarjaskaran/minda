@@ -1,0 +1,28 @@
+.subscribe {
+  display: flex;
+  padding: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $lightgreen;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5;
+    font-weight: 300;
+    margin: 2rem;
+  }
+
+  input {
+    border: none;
+    background-color: $lightgreen;
+    border-bottom: 2px solid gray;
+    outline: none;
+    padding: 0.5rem;
+    @media (max-width: 750px) {
+      margin: 2rem 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.newse {
+  margin: 3rem 3rem;
+
+  &__head {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-between;
+
+    h2 {
+      font-weight: 200;
+    }
+  }
+}
+
+.news {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    padding-left: 2.5rem;
+    background-color: $green;
+
+    img {
+    }
+
+    .news__heading {
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.5;
+      margin: 2rem 0;
+      margin-right: 1rem;
+    }
+
+    .news__desc {
+      font-size: 0.75rem;
+      line-height: 1.75;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.color-blue {
+  background-color: $lightblue;
+}
