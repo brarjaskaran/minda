@@ -259,9 +259,8 @@ button {
 
 .hero img {
   z-index: 2;
+  width: 100%;
   position: relative;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .hero__content {
@@ -642,10 +641,6 @@ button {
   .info__grid .mobile-info {
     display: none;
   }
-}
-
-.newse {
-  margin: 3rem 3rem;
 }
 
 .newse__head {
